@@ -1,38 +1,200 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  padding: 5px;
+  height: 40px;
+  color: #303030;
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  width: 70%;
+  max-width: 900px;
+  text-align: left;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+button {
+  font-size: 0.925rem;
+  cursor: pointer;
+  padding: 7px 15px;
+  background-color: #495dad;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #313e74;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.story-description {
+  font-size: 0.925em;
+  margin: 15px 0;
+  text-align: left;
+}
+
+.date-posted {
+  font-weight: 300;
+  font-size: 0.75em;
+  margin-top: 1px;
+}
+
+.link-url {
+  font-size: 0.925em;
+  margin-top: 5px;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.icon-button {
+  cursor: pointer;
+  color: #303030; /* Adjust color as needed */
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.icon-button:hover {
+  color: #7e7e7e; /* Adjust hover color as needed */
+}
+
+.slide-indicators {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.dot {
+  height: 0.5rem;
+  width: 0.5rem;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.dot.active {
+  background-color: #3858d7;
+}
+
+/* Icon Tabs */
+.icon-tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #efefef;
+  margin-bottom: 18px;
+  border-radius: 8px;
+}
+
+.icon-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+  cursor: pointer;
+  color: #b7b7b7;
+  border-radius: 8px;
+}
+
+.icon-tab.active {
+  background-color: #fff;
+  color: #171717;
+  border: 1.5px solid #eaeaea;
+}
+
+.icon-tab:not(.active):hover {
+  color: #5f5f5f;
+  border-radius: 8px;
+}
+
+/* Reddit Tab styling */
+.card img.reddit-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.reddit-top-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 0.875rem;
+  color: #7e7e7e;
+}
+
+.reddit-bottom-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  font-size: 0.875rem;
+  color: #131313;
+  margin-top: 0px;
+  gap: 10px;
+}
+
+.score {
+  background-color: #dddddd;
+  padding: 5px 10px;
+  border-radius: 12px;
+}
+
+.comments {
+  background-color: #dddddd;
+  padding: 5px 10px;
+  border-radius: 12px;
+}
+
+/* Media query for mobile phones */
+@media (max-width: 600px) {
+  .dot {
+    height: 0.2rem;
+    width: 0.2rem;
+    margin: 0 3px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .slide-indicators {
+    margin-top: 10px;
   }
 }
