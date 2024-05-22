@@ -1,3 +1,15 @@
+# Project Details
+
+This project started out as an attempt to cpoy the functionality of the nytimes card storytelling feature [https://www.nytimes.com/2022/01/20/insider/the-times-bursts-visual-storytelling.html](https://www.nytimes.com/2022/01/20/insider/the-times-bursts-visual-storytelling.html)
+
+I wanted to create a card component that can pull stories from the nytimes api
+I then wanted to add tabs to my api card, that could flip between different feeds, in this case I added the reddit popular posts feed using the reddit api
+
+I set up a backend that runs a local server for my api calls, and the front end feeds the stories from my server into the card component
+
+Recreating this project requires signing up for nytimes and reddit api access 
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
