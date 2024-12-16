@@ -1,6 +1,6 @@
 # Project Details
 
-This project started out as an attempt to cpoy the functionality of the nytimes card storytelling feature [https://www.nytimes.com/2022/01/20/insider/the-times-bursts-visual-storytelling.html](https://www.nytimes.com/2022/01/20/insider/the-times-bursts-visual-storytelling.html)
+This project started out as an attempt to copy the functionality of the nytimes card storytelling feature [https://www.nytimes.com/2022/01/20/insider/the-times-bursts-visual-storytelling.html](https://www.nytimes.com/2022/01/20/insider/the-times-bursts-visual-storytelling.html)
 
 I wanted to create a card component that can pull stories from the nytimes api
 I then wanted to add tabs to my api card, that could flip between different feeds, in this case I added the reddit popular posts feed using the reddit api
